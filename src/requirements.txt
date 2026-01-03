@@ -1,0 +1,27 @@
+# Core web frameworks
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# Frontend interface
+gradio>=4.0.0
+
+# For HTTP requests from gradio>=4.0.0 to FastAPI
+requests==2.31.0
+
+# Data validation
+pydantic==2.6.4
+pydantic-settings==2.2.1  # Optional for config management
+
+# AI/NLP models (optional depending on use case)
+transformers>=4.35.0      # Optional: for Hugging Face models
+torch==2.2.2              # Optional: required if using PyTorch models
+scikit-learn==1.4.2       # Optional: AI/ML tools for analysis
+
+# Security & sandboxing (add as needed)
+docker==7.0.0             # Optional: for task sandboxing
+psutil==5.9.8             # Optional: system/process inspection
+python-dotenv==1.0.1      # Optional: env var management
+
+# Background tasks (optional)
+celery==5.3.6
+redis==5.0.4
